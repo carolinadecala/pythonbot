@@ -1,0 +1,18 @@
+# Random is used to show random message if certain message is typed
+import random
+
+# If user types something about eating this response will be shown
+R_EATING = "I don't like eating anything because I'm a bot obviously!"
+
+# If user asks for advice this response is shown
+R_ADVICE = "If I were you, I would go to the internet and type exactly what you wrote there!"
+
+# Random message to be shown if bot doesn't know what to answer
+def unknown():
+    # list of responses
+    response = ["Could you please type that again? ",
+                "...",
+                "Sounds about right.",
+                "Maybe?"][
+        random.randrange(4)]
+    return response
